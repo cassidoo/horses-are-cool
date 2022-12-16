@@ -1,0 +1,24 @@
+---
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	html {
+		background-color: #d02f37;
+		color: #fff;
+	}
+	h1,
+	a {
+		color: #ffca75;
+	}
+</style>

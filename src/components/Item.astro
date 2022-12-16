@@ -1,0 +1,11 @@
+---
+const { name } = Astro.props;
+
+const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}/`);
+const data = await response.json();
+---
+
+<div>hello {data.name}</div>
+<img src={data.sprites.front_default} />
+
+<hr />

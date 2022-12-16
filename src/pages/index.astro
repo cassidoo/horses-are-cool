@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Counter from "../components/Counter";
+---
+
+<Layout title="horses are neat">
+	<h1>Hello, world</h1>
+
+	<ul>
+		<li>fish</li>
+		<li>cake</li>
+		<li>fish</li>
+		<li>fish</li>
+		<li>cake</li>
+	</ul>
+
+	<a href="/horses">look, a horse</a>
+	<br />
+	<a href="/propexample">here's an example of props</a>
+	<br />
+	<a href="/poke/3">here's an example of pagination</a>
+
+	<Counter client:visible />
+</Layout>

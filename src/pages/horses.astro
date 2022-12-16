@@ -1,0 +1,14 @@
+---
+const response = await fetch(`https://pokeapi.co/api/v2/pokemon/pikachu/`);
+const data = await response.json();
+---
+
+<h1>Not a horse lol,pranked</h1>
+
+<p>
+	{data.name}
+</p>
+
+<img src={data.sprites.front_default} />
+
+<a href="/">go home</a>
